@@ -1,7 +1,7 @@
 import "./Shop3cxLicensing.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
-import licensingImg from "../../../assets/3cxLogoBgWhite.png";
+import licensingImg from "../../../assets/3cxLogoBgWhite.PNG";
 import { Link } from "react-router-dom";
 
 function Shop3cxLicensing() {

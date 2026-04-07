@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Phone3cxSystem from "../../components/phonesystem3cx/Phone3cxSystem";
 import heroImg from "../../assets/servicespage/phonemanage3cx.PNG";
 import logo from "../../assets/3cxLogo.PNG";
-import card1 from "../../assets/servicespage/card1.png";
+import card1 from "../../assets/servicespage/card1.PNG";
 
 import {
   FaShieldAlt,
