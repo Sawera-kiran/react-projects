@@ -26,12 +26,12 @@ import FAQ from "../../components/questions/FAQ";
 import ContactUs from "../../components/contactUs/ContactUs";
 import ConsultationBanner from "../../components/consultation banner/ConsultationBanner";
 import FeaturedBlogs from "../../components/featuredBlogs/FeaturedBlogs";
-import blog1 from "../../assets/Blog/voicemail.png";
-import blog2 from "../../assets/Blog/license.png";
-import blog3 from "../../assets/Blog/blog3.png";
-import blog4 from "../../assets/Blog/blog4.png";
-import blog5 from "../../assets/Blog/blog5.png";
-import blog6 from "../../assets/Blog/blog6.png";
+import blog1 from "../../assets/Blog/voicemail.PNG";
+import blog2 from "../../assets/Blog/license.PNG";
+import blog3 from "../../assets/Blog/blog3.PNG";
+import blog4 from "../../assets/Blog/blog4.PNG";
+import blog5 from "../../assets/Blog/blog5.PNG";
+import blog6 from "../../assets/Blog/blog6.PNG";
 
 function Services3cxPhoneSystems() {
   const phone3cxfaqs = [
