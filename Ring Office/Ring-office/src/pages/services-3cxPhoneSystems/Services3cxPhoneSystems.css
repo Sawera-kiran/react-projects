@@ -1,0 +1,182 @@
+.phone3cx-section {
+  background: rgb(233 243 255);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.phone3cx-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.phone3cx-logo img {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.phone3cx-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.phone3cx-text {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.phone3cx-text strong {
+  font-weight: 700;
+}
+
+/* feature section css */
+
+.features-section {
+  background: #c3c7cd;
+  padding: 80px 20px;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+
+.feature-card {
+  text-align: left;
+}
+
+.feature-icon {
+  font-size: 30px;
+  color: #1e73be;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.feature-card p {
+  color: #000000;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* partner card css */
+
+.partner-card-section {
+  padding: 80px 20px;
+  background: #f5f6f7;
+}
+
+.partner-card {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(90deg, #e9eef4, #f7f7f7);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.partner-card-content {
+  padding: 40px;
+  flex: 1;
+}
+
+.partner-card-content h2 {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.partner-btn {
+  background: #1e73be;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.partner-btn:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+.partner-card-image {
+  flex: 1;
+}
+
+.partner-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* cloud feature section */
+
+
+.cloud-features-section {
+  padding: 100px 20px;
+
+  background: white;
+}
+.cloud-features-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.cloud-card {
+  background:white;
+  border-radius:20px;
+  padding:30px;
+
+  display:flex;         
+  gap:18px;
+  align-items:flex-start;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.cloud-card:hover {
+  transform: translateY(-5px);
+}
+
+.cloud-icon-wrapper{
+  min-width:40px;
+}
+
+.cloud-icon{
+  font-size:30px;
+  color:#1e73be;
+  margin-top:4px;
+}
+
+.cloud-content h3{
+  font-size:18px;
+  margin-bottom:8px;
+  color:black;
+}
+
+.cloud-content p{
+  font-size:16px;
+  color:#000000;
+  line-height:1.6;
+}

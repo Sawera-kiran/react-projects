@@ -1,0 +1,74 @@
+.business {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.business-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: -60px;
+}
+
+
+.business-left {
+  flex: 1;
+}
+
+.business-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.business-desc {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.business-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.business-list li {
+  margin-bottom: 12px;
+  color:#000000 ;
+  padding-left: 18px;
+  position: relative;
+  align-items: center;
+}
+
+.business-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  color: #000000;
+}
+
+.consult-btn {
+  background: rgb(0 118 190);
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+
+.business-right {
+  flex: 1;
+}
+
+.business-right img {
+  width: 100%;
+  max-width: 520px;
+}

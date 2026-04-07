@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141d38;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141d38;
+  padding: 15px 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:1000;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+#logo {
+  color: #3cbeeb;
+}
+
+.logoLink {
+  color: white;
+}
+
+.logoLink:hover {
+  color: white;
+}
+
+header nav a {
+  margin-left: 60px;
+  color: white;
+}
+
+a:hover {
+  color: #3cbeeb;
+}

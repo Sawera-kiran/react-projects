@@ -1,0 +1,54 @@
+
+
+.cloud-benefits-section {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-icon {
+  width: 55px;
+  height: 55px;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  font-size: 32px;
+  color: #0d6efd;
+}
+
+.benefit-item h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: black;
+}
+
+.benefit-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+.benefits-image {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.benefits-image img {
+  width: 100%;
+  max-width: 350px;
+}

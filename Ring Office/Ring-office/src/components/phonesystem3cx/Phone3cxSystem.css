@@ -1,0 +1,90 @@
+.cxsection {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #145ca3, #0a3d73);
+  padding: 80px 0;
+}
+
+.cx-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cx-content {
+  flex: 1;
+
+}
+
+.hero-tag {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: white;
+
+}
+
+.cx-content h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+
+}
+
+.hero-desc {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 30px;
+  color: white;
+
+}
+
+.cx-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: rgb(0 118 190);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: rgb(0 118 190);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-primary.btn-secondary:hover {
+background-color: white;
+color: black;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cx-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+}

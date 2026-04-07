@@ -1,0 +1,63 @@
+.cloud-solutions {
+  background: #0064bf;
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.cloud-solutions h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.cloudSolutionSubtitle {
+  color: white;
+  margin-bottom: 70px;
+  font-size: 18px;
+}
+
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+
+.solution-card {
+  width: 300px;
+  height: 470px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  color: black;
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.solution-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}

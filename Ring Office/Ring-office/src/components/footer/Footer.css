@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background: #1366b1;
+  color: white;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.company p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 50px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 15px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contactinfo-icons {
+  font-size: 20px;
+}
+
+.billing-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: #1366b1;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+  border-top: 2px solid rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}

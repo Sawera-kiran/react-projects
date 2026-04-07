@@ -1,0 +1,73 @@
+.partner {
+  padding: 90px 10%;
+  text-align: center;
+  color: white;
+
+  background: linear-gradient(
+    120deg,
+    #1a2735,
+    #0e3b63,
+    #021c33
+  );
+}
+
+/* TITLE */
+
+.partner h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+
+.partner-subtitle {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+.partner-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 18px 80px;
+  margin-bottom: 40px;
+}
+
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+
+.check-icon {
+  color: #1fa2ff;
+  font-size: 18px;
+}
+
+
+.divider {
+  width: 880px;
+  height: 2px;
+  background: #1fa2ff;
+  margin: 25px auto;
+}
+
+
+.partner-btn {
+  background: #1fa2ff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.partner-btn:hover {
+  background: #1186d9;
+}

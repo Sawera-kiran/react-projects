@@ -1,0 +1,44 @@
+.devices-section {
+  padding: 80px 10%;
+  background: #f5f6f7;
+}
+
+.devices-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* card */
+
+.device-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.device-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.device-card img {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.device-card h3 {
+  color: #0074c8;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.device-card p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+

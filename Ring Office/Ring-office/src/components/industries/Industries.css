@@ -1,0 +1,49 @@
+.industries {
+  padding: 80px 10%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.industries h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: black;
+}
+
+
+.industries-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.industries-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+}
+
+.industry-item h3 {
+  color: #1a63c7;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.industry-item p {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+}
+
+
+.industries-image {
+  display: flex;
+  justify-content: center;
+}
+
+.industries-image img {
+  width: 500px;
+}
