@@ -11,7 +11,7 @@ import Industries from "../../components/industries/Industries";
 import PartnerPrograms from "../../components/partnerPrograms/PartnerPrograms";
 import Reviews from "../../components/reviews/Reviews";
 import FeaturedBlogs from "../../components/featuredBlogs/FeaturedBlogs";
-import blog1 from "../../assets/Blog/voicemail.png";
+import blog1 from "../../assets/Blog/voicemail.PNG";
 import blog2 from "../../assets/Blog/license.png";
 import blog3 from "../../assets/Blog/callhandling.png";
 import FAQ from "../../components/questions/FAQ";
