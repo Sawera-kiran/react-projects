@@ -1,5 +1,5 @@
 import "./Industries.css";
-import industryImg from "../../assets/industries/industriesimg.png";
+import industryImg from "../../assets/industries/industriesimg.PNG";
 
 function Industries() {
   return (

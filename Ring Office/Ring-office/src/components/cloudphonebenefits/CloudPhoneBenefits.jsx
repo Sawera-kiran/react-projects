@@ -1,5 +1,5 @@
 import "./CloudPhoneBenefits.css";
-import benefitsImg from "../../assets/servicespage/cloudbenefitimg.png";
+import benefitsImg from "../../assets/servicespage/cloudbenefitimg.PNG";
 
 import {
   FaMobileAlt,

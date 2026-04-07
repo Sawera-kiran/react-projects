@@ -1,11 +1,11 @@
 import "./ServicesGrid.css";
 
-import cloudPhone from "../../assets/servicesimgs/cloudphone.png";
-import phone3cx from "../../assets/servicesimgs/phone3cx.png";
-import sip from "../../assets/servicesimgs/siptruncking.png";
-import managedIT from "../../assets/servicesimgs/itservices.png";
-import microsoft from "../../assets/servicesimgs/microsoftsolutions.png";
-import aws from "../../assets/servicesimgs/aws.png";
+import cloudPhone from "../../assets/servicesimgs/cloudphone.PNG";
+import phone3cx from "../../assets/servicesimgs/phone3cx.PNG";
+import sip from "../../assets/servicesimgs/siptruncking.PNG";
+import managedIT from "../../assets/servicesimgs/itservices.PNG";
+import microsoft from "../../assets/servicesimgs/microsoftsolutions.PNG";
+import aws from "../../assets/servicesimgs/aws.PNG";
 
 function ServicesGrid() {
 

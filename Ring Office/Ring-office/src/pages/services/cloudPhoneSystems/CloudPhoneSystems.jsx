@@ -2,15 +2,15 @@ import "./CloudPhoneSystems.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
 import Phone3cxSystem from "../../../components/phonesystem3cx/Phone3cxSystem";
-import cloudphonesystems from "../../../assets/servicespage/cloudphonesystems.png";
+import cloudphonesystems from "../../../assets/servicespage/cloudphonesystems.PNG";
 import FeatureBlocks from "../../../components/feature blocks/FeatureBlocks";
-import img1 from "../../../assets/servicespage/cloudPhoneFeatures/feature1.png";
-import img2 from "../../../assets/servicespage/cloudPhoneFeatures/feature2.png";
-import img3 from "../../../assets/servicespage/cloudPhoneFeatures/feature3.png";
-import img4 from "../../../assets/servicespage/cloudPhoneFeatures/feature4.png";
-import img5 from "../../../assets/servicespage/cloudPhoneFeatures/feature5.png";
+import img1 from "../../../assets/servicespage/cloudPhoneFeatures/feature1.PNG";
+import img2 from "../../../assets/servicespage/cloudPhoneFeatures/feature2.PNG";
+import img3 from "../../../assets/servicespage/cloudPhoneFeatures/feature3.PNG";
+import img4 from "../../../assets/servicespage/cloudPhoneFeatures/feature4.PNG";
+import img5 from "../../../assets/servicespage/cloudPhoneFeatures/feature5.PNG";
 import CloudPhoneBenefits from "../../../components/cloudphonebenefits/CloudPhoneBenefits";
-import cloudbenefitimg from "../../../assets/servicespage/cloudbenefitimg.png";
+import cloudbenefitimg from "../../../assets/servicespage/cloudbenefitimg.PNG";
 
 function CloudPhoneSystems() {
   const featureData = [

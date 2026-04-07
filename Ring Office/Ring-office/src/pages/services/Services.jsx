@@ -23,7 +23,7 @@ function Services() {
         <div
           className="banner-left"
           style={{
-            backgroundImage: `url(/src/assets/blueclouds.png)`,
+            backgroundImage: `url(/src/assets/blueclouds.PNG)`,
           }}
         >
           <div className="banner-content">
@@ -39,7 +39,7 @@ function Services() {
         <div
           className="banner-right"
           style={{
-            backgroundImage: `url(/src/assets/rocket.png)`,
+            backgroundImage: `url(/src/assets/rocket.PNG)`,
           }}
         >
           <div className="banner-content">
