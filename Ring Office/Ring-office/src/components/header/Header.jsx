@@ -3,7 +3,7 @@ import logo from "../../assets/logo/logo.webp";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
-import { useCart } from "../../context/Cartcontext";
+import { useCart } from "../../context/CartContext";
 function Header() {
   const { cartCount } = useCart();
   return (
