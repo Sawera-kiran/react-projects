@@ -2,6 +2,15 @@ Shopping Cart App (React + Vite)
 
 This project is a React-powered shopping cart demonstrating dynamic product interactions, state management, and a live cart summary.
 
+
+
+🌐 Live Demo
+
+Check it out live here: shopping-cart-sawera.netlify.app
+
+
+
+
 🌟 Features
 
 Hero Image Navigation: Clicking the hero image leads to the product list.
@@ -45,7 +54,7 @@ Product data is fetched from DummyJSON Carts API
 
 ⚙️ Run Locally
 
-git clone https://github.com/sawera-kiran/react-projects.git
+git clone https://github.com/Sawera-kiran/react-projects/tree/main/Shopping%20Cart/shopping-cart
 
 cd Shopping Cart/shopping-cart
 
@@ -53,6 +62,4 @@ npm install
 
 npm run dev
 
-🌐 Live Demo
 
-Check it out live here: shopping-cart-sawera.netlify.app
