@@ -1,18 +1,77 @@
-# React + Vite
+Ring Office App Clone(React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-powered office management application that allows users to browse office listings, manage selections in a cart, and interact with personalized features.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+🌟 Features
 
-Note: This will impact Vite dev & build performances.
+Hero Section: A visually striking hero image that navigates users to the office listings.
 
-## Expanding the ESLint configuration
+Product Catalog: A full list of office spaces fetched from the DummyJSON Products API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cart Management: Users can add offices to a cart, review selections, and see a live total.
+
+Product Details: Each office listing offers detailed information to support decision-making.
+
+Navigation Bar: A dynamic nav bar for quick access to home, cart, login, and contact sections.
+
+Login & Create Account: Users can create accounts or log in to personalize their selections.
+
+Contact Us: A dedicated contact section for inquiries and support.
+
+
+
+
+
+🧠 How It Works
+
+The hero image leads users to the office listing page.
+
+Offices are fetched from the DummyJSON API dynamically.
+
+Users browse office spaces, add them to the cart, and adjust selections.
+
+The cart dynamically updates with totals and item counts.
+
+Users can log in, create accounts, and contact the office team.
+
+
+
+
+🛠 Tech Stack
+
+React (with Vite for fast build and development)
+
+JavaScript (for interactive functionality, ES6+)
+
+CSS (for styling, no Tailwind used)
+
+
+
+
+📦 API
+
+Product data is fetched from DummyJSON Products API.
+
+
+
+
+⚙️ Run Locally
+
+git clone https://github.com/Sawera-kiran/react-projects/tree/main/Ring%20Office/Ring-office
+
+cd ring-office
+
+npm install
+
+npm run dev
+
+
+
+
+
+🌐 Live Demo
+
+Check out the live version here: https://ring-office.netlify.app/
