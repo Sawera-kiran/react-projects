@@ -1,18 +1,58 @@
-# React + Vite
+Shopping Cart App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-powered shopping cart demonstrating dynamic product interactions, state management, and a live cart summary.
 
-Currently, two official plugins are available:
+🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hero Image Navigation: Clicking the hero image leads to the product list.
 
-## React Compiler
+Product Catalog: A list of all products fetched from the DummyJSON API.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Add to Cart: Each product has an “Add to Cart” button, adding it to the cart section in the nav bar.
 
-Note: This will impact Vite dev & build performances.
+Quantity Controls: Each cart item can increment (plus) or decrement (minus) its quantity.
 
-## Expanding the ESLint configuration
+Dynamic Cart Summary: The cart updates live with total item count and total cost.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Checkout Button: A checkout button reflects the total but is not linked to any backend yet.
+
+Empty Cart State: When the cart is empty, a message (image) appears. Clicking it returns you to the product list.
+
+🧠 How It Works
+
+The hero image leads to the product page.
+
+Products are fetched from DummyJSON.
+
+Adding products updates the cart count and total.
+
+Checkout shows totals but has no backend action.
+
+Empty cart prompts users to return to products.
+
+🛠 Tech Stack
+
+React (with Vite for build tooling)
+
+JavaScript (for functionality)
+
+CSS (for styling)
+
+📦 API
+
+Product data is fetched from DummyJSON Carts API
+.
+
+⚙️ Run Locally
+
+git clone https://github.com/sawera-kiran/react-projects.git
+
+cd Shopping Cart/shopping-cart
+
+npm install
+
+npm run dev
+
+🌐 Live Demo
+
+Check it out live here: shopping-cart-sawera.netlify.app
