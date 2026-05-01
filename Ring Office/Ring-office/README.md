@@ -3,6 +3,11 @@ Ring Office App Clone(React + Vite)
 This project is a React-powered office management application that allows users to browse office listings, manage selections in a cart, and interact with personalized features.
 
 
+🌐 Live Demo
+
+Check out the live version here: https://ring-office.netlify.app/
+
+
 
 
 🌟 Features
@@ -67,11 +72,3 @@ cd ring-office
 npm install
 
 npm run dev
-
-
-
-
-
-🌐 Live Demo
-
-Check out the live version here: https://ring-office.netlify.app/
