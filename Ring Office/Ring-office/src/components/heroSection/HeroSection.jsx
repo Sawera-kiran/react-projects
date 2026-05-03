@@ -21,8 +21,25 @@ function HeroSection() {
           </p>
 
           <div className="hero-buttons">
-            <button className="primary-btn  heroBtns">Get a Quote</button>
-            <button className="secondary-btn heroBtns">Contact Us</button>
+            <button
+              className="primary-btn  heroBtns"
+              onClick={() =>
+                window.open(
+                  "https://ringoffice.com/contact-us-ringoffice",
+                  "_blank",
+                )
+              }
+            >
+              Get a Quote
+            </button>
+            <button
+              className="secondary-btn heroBtns"
+              onClick={() =>
+                window.open("https://ringoffice.com/#contact-us", "_blank")
+              }
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       </div>

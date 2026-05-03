@@ -5,6 +5,9 @@ import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import LoginPage from "./pages/LoginPage";
 import CreateAccount from "./pages/CreateAccount";
+import Faq from "./pages/Faq";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 import Services3cxPhoneSystems from "./pages/services-3cxPhoneSystems/Services3cxPhoneSystems";
 import CloudPhoneSystems from "./pages/services/cloudPhoneSystems/CloudPhoneSystems";
@@ -16,14 +19,13 @@ import ProductDetails from "./pages/shop/productDetails/ProductDetails";
 import Header from "./components/header/Header";
 import Cart from "./pages/cart/Cart";
 import { useState } from "react";
-
+import Footer from "./components/footer/Footer";
 function App() {
   const [cart, setCart] = useState([]);
 
   return (
     <>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -38,6 +40,10 @@ function App() {
         <Route path="/cloud-hosting" element={<CloudPhoneSystems />} />
 
         <Route path="/3cx-licensing" element={<Shop3cxLicensing />} />
+        <Route path="/contact" element={<Contact/>} />
+
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blog />} />
 
         <Route path="/shop" element={<Shop cart={cart} setCart={setCart} />} />
 
@@ -45,7 +51,7 @@ function App() {
           path="/product/:slug"
           element={<ProductDetails setCart={setCart} />}
         />
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );

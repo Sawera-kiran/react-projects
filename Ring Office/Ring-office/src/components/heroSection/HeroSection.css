@@ -26,7 +26,6 @@
 .partner-logo {
   width: 220px;
   margin-bottom: 5px;
-
 }
 
 .hero h1 {
@@ -62,6 +61,7 @@
   cursor: pointer;
   font-size: 17px;
   font-weight: bold;
+  border: 1px solid rgb(0 118 190);
 }
 
 .secondary-btn {
@@ -72,12 +72,14 @@
   cursor: pointer;
   background: rgb(0 118 190);
   color: white;
-  border: none;
+  border: transparent;
+  border: 1px solid rgb(0 118 190);
 }
 
-.heroBtns:hover{
- background-color: white;
- color: black;
+.heroBtns:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(0 118 190);
 }
 
 .hero-cloud {

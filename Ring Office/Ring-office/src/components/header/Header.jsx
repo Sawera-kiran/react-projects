@@ -1,143 +1,105 @@
 import "./Header.css";
 import logo from "../../assets/logo/logo.webp";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-import { FaChevronDown } from "react-icons/fa";
+import { FaShoppingCart, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { useCart } from "../../context/CartContext";
+import { useState } from "react";
+
 function Header() {
   const { cartCount } = useCart();
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+
+  const toggleDropdown = (name) => {
+    setDropdownOpen(dropdownOpen === name ? null : name);
+  };
+
   return (
-    <>
-      <header>
-        <nav>
+    <header>
+      <nav>
+        {/* TOP BAR */}
+        <div className="nav-top">
           <Link to="/">
             <span className="logoimg">
-              <img src={logo} />
+              <img src={logo} alt="logo" />
             </span>
           </Link>
 
-          <ul className="navlinks">
-            <li>
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
+        </div>
+
+        {/* NAV LINKS */}
+        <ul className={`navlinks ${menuOpen ? "active" : ""}`}>
+          {/* SERVICES */}
+          <li>
+            <div
+              className="nav-item"
+              onClick={() => toggleDropdown("services")}
+            >
+            
               <Link to="/services">
                 Services <FaChevronDown className="navarrow" />
               </Link>
+            </div>
 
-              <ul className="dropdown">
-                <li>
-                  <Link to="/3CX-Phone">3CX Phone Systems</Link>
-                </li>
-                <li>
-                  <Link to="/cloud-hosting">Cloud Phone Systems</Link>
-                </li>
-                <li>
-                  <Link to="/domain">Sip Truncking</Link>
-                </li>
-              </ul>
-            </li>
+            <ul
+              className={`dropdown ${
+                dropdownOpen === "services" ? "show" : ""
+              }`}
+            >
+              <li>
+                <Link to="/3CX-Phone">3CX Phone Systems</Link>
+              </li>
+              <li>
+                <Link to="/cloud-hosting">Cloud Phone Systems</Link>
+              </li>
+            </ul>
+          </li>
 
-            <li>
-              <Link to="/product">
-                Industries <FaChevronDown className="navarrow" />
-              </Link>
+          {/* SHOP */}
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
 
-              <ul className="dropdown">
-                <li>
-                  <Link to="/ecommerce">Hospitality</Link>
-                </li>
-                <li>
-                  <Link to="/education">Contact Centre</Link>
-                </li>
-                <li>
-                  <Link to="/healthcare">Healthcare</Link>
-                </li>
-                <li>
-                  <Link to="/healthcare">Retail</Link>
-                </li>
-                <li>
-                  <Link to="/healthcare">Manufacturing</Link>
-                </li>
-              </ul>
-            </li>
+          {/* SUPPORT */}
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
 
-            <li className="mega-parent">
-              <Link to="/shop">
-                Shop <FaChevronDown className="navarrow" />
-              </Link>
-              <div className="mega-menu">
-                <div className="mega-column">
-                  <h4>Services</h4>
-                  <Link to="/technical-support">Technical Support</Link>
-                  <Link to="/sip-trunks">SIP Trunks</Link>
-                  <Link to="/3cx-managed-cloud">3CX Managed Cloud</Link>
-                  <Link to="/cloud-phone-system">Cloud Phone System</Link>
-                </div>
-                <div className="mega-column">
-                  <h4>3CX</h4>
-                  <Link to="/products/3cx-licensing">3CX Licensing</Link>
+          {/* CONTACT */}
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
 
-                  <h4>Connectivity & Network</h4>
-                  <Link to="/gateways">Gateways & Adapters</Link>
-                  <Link to="/paging">Paging & Intercoms</Link>
-                  <Link to="/networking">Networking</Link>
-                </div>
-                <div className="mega-column">
-                  <h4>VoIP Phones</h4>
-                  <Link to="/desk-phones">VoIP Desk Phones</Link>
-                  <Link to="/cordless">VoIP Cordless Phones</Link>
-                  <Link to="/conference">Conference Phones</Link>
-                  <Link to="/phone-accessories">Phone Accessories</Link>
-                </div>
-                <div className="mega-column">
-                  <h4>Headsets</h4>
-                  <Link to="/wireless-headsets">Wireless Headsets</Link>
-                  <Link to="/wired-headsets">Wired Headsets</Link>
-                  <Link to="/ms-teams-headsets">MS Teams Headsets</Link>
-                  <Link to="/headset-accessories">Headset Accessories</Link>
-                </div>
-              </div>
-            </li>
-            <li>
-              <Link to="/partners">
-                Partners
-                <FaChevronDown className="navarrow" />
-              </Link>
-              <ul className="dropdown">
-                <li>
-                  <Link to="/ecommerce">3CX Partner Success Program</Link>
-                </li>
-                <li>
-                  <Link to="/education">Reseller Program</Link>
-                </li>
-                <li>
-                  <Link to="/healthcare">Partner Registration</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/support">Support</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/login">
-                Login
-                <FaChevronDown className="navarrow" />
-              </Link>
-              <ul className="dropdown">
-                <li>
-                  <Link to="/login">Shop Login</Link>
-                </li>
-                <li>
-                  <Link to="/create-account">Create Account</Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          {/* BLOG */}
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
 
+          {/* LOGIN */}
+          <li>
+            <div className="nav-item" onClick={() => toggleDropdown("login")}>
+              Login <FaChevronDown />
+            </div>
+
+            <ul
+              className={`dropdown ${dropdownOpen === "login" ? "show" : ""}`}
+            >
+              <li>
+                <Link to="/login">Shop Login</Link>
+              </li>
+              <li>
+                <Link to="/create-account">Create Account</Link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        {/* RIGHT SIDE */}
+        <div className="right-section">
           <div className="billingdiv">
             <p>My Billing</p>
             <select className="billinglist">
@@ -145,15 +107,16 @@ function Header() {
               <option>CAD</option>
             </select>
           </div>
+
           <div className="carticon">
-          <Link to="/cart" className="carticon">
-            <FaShoppingCart />
-          </Link>
-          <span className="cart-count">{cartCount}</span>
+            <Link to="/cart">
+              <FaShoppingCart />
+            </Link>
+            <span className="cart-count">{cartCount}</span>
           </div>
-        </nav>
-      </header>
-    </>
+        </div>
+      </nav>
+    </header>
   );
 }
 

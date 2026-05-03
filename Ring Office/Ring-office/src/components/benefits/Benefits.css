@@ -10,13 +10,11 @@
   color: black;
 }
 
-
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
-
 
 .benefit-card {
   background: white;
@@ -25,18 +23,22 @@
   width: 250px;
   height: 300px;
   color: black;
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .benefit-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .benefit-icon {
   font-size: 50px;
   color: #1b6fb8;
+  display: flex;
   margin-bottom: 20px;
+  margin-left: 35%;
 }
 
 .benefit-card h3 {

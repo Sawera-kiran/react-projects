@@ -59,15 +59,16 @@
 
 .partner-btn {
   background: #1fa2ff;
-  border: none;
   padding: 12px 32px;
   border-radius: 30px;
   color: white;
   font-size: 17px;
   cursor: pointer;
-  transition: 0.3s;
+ 
 }
 
 .partner-btn:hover {
-  background: #1186d9;
+  background: white;
+  color: black;
+
 }
